@@ -11,7 +11,7 @@
 
   <parent>
     <version>8.5.0-SNAPSHOT</version>
-    <groupId>jp.pizzafactory.express</groupId>
+    <groupId>jp.pizzafactory.crust</groupId>
     <artifactId>parent</artifactId>
     <relativePath>../parent/pom.xml</relativePath>
   </parent>

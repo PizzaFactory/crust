@@ -4,7 +4,7 @@
     xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>jp.pizzafactory.express</groupId>
+        <groupId>jp.pizzafactory.crust</groupId>
         <artifactId>parent</artifactId>
         <version>8.5.0-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
@@ -25,108 +25,7 @@
           </configuration>
         </plugin>
 
-        <plugin>
-          <groupId>org.eclipse.tycho</groupId>
-          <artifactId>tycho-p2-director-plugin</artifactId>
-          <version>${tycho-version}</version>
-          <executions>
-            <execution>
-              <id>generate-products</id>
-              <goals>
-                <goal>materialize-products</goal>
-                <goal>archive-products</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-
       </plugins>
     </build>
 
-  <profiles>
-    <profile>
-      <id>gh-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>de.jutzig</groupId>
-              <artifactId>github-release-plugin</artifactId>
-              <version>1.1.0</version>
-              <executions>
-                <execution>
-                  <id>macosx.cocoa.x86_64</id>
-                  <phase>deploy</phase>
-                  <goals>
-                    <goal>release</goal>
-                  </goals>
-                  <inherited>false</inherited>
-                  <configuration>
-                    <releaseName>${project.version}</releaseName>
-                    <tag>${project.version}</tag>
-                    <artifact>${project.build.directory}/products/pizzafactory.product-macosx.cocoa.x86_64.zip</artifact>
-                    <repositoryId>PizzaFactory/express</repositoryId>
-                  </configuration>
-                </execution>
-                <execution>
-                  <id>linux.gtk.x86</id>
-                  <phase>deploy</phase>
-                  <goals>
-                    <goal>release</goal>
-                  </goals>
-                  <inherited>false</inherited>
-                  <configuration>
-                    <releaseName>${project.version}</releaseName>
-                    <tag>${project.version}</tag>
-                    <artifact>${project.build.directory}/products/pizzafactory.product-linux.gtk.x86.zip</artifact>
-                    <repositoryId>PizzaFactory/express</repositoryId>
-                  </configuration>
-                </execution>
-                <execution>
-                  <id>win32.win32.x86_64</id>
-                  <phase>deploy</phase>
-                  <goals>
-                    <goal>release</goal>
-                  </goals>
-                  <inherited>false</inherited>
-                  <configuration>
-                    <releaseName>v${project.version}</releaseName>
-                    <tag>${project.version}</tag>
-                    <artifact>${project.build.directory}/products/pizzafactory.product-win32.win32.x86_64.zip</artifact>
-                    <repositoryId>PizzaFactory/express</repositoryId>
-                  </configuration>
-                </execution>
-                <execution>
-                  <id>linux.gtk.x86_64</id>
-                  <phase>deploy</phase>
-                  <goals>
-                    <goal>release</goal>
-                  </goals>
-                  <inherited>false</inherited>
-                  <configuration>
-                    <releaseName>v${project.version}</releaseName>
-                    <tag>${project.version}</tag>
-                    <artifact>${project.build.directory}/products/pizzafactory.product-linux.gtk.x86_64.zip</artifact>
-                    <repositoryId>PizzaFactory/express</repositoryId>
-                  </configuration>
-                </execution>
-                <execution>
-                  <id>win32.win32.x86</id>
-                  <phase>deploy</phase>
-                  <goals>
-                    <goal>release</goal>
-                  </goals>
-                  <inherited>false</inherited>
-                  <configuration>
-                    <releaseName>v${project.version}</releaseName>
-                    <tag>${project.version}</tag>
-                    <artifact>${project.build.directory}/products/pizzafactory.product-win32.win32.x86.zip</artifact>
-                    <repositoryId>PizzaFactory/express</repositoryId>
-                  </configuration>
-                </execution>
-              </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>

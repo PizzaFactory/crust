@@ -4,13 +4,13 @@
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>jp.pizzafactory.product</artifactId>
-  <packaging>eclipse-plugin</packaging>
+  <artifactId>jp.pizzafactory.crust</artifactId>
+  <packaging>eclipse-feature</packaging>
 
-  <name>PizzaFactory product plugin</name>
+  <name>Crust for PizzaFactory Feature</name>
 
   <parent>
-    <groupId>jp.pizzafactory.express</groupId>
+    <groupId>jp.pizzafactory.crust</groupId>
     <artifactId>parent</artifactId>
     <version>8.5.0-SNAPSHOT</version>
     <relativePath>../parent/pom.xml</relativePath>

@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="jp.pizzafactory.express"
-      label="PizzaFactory8"
+      id="jp.pizzafactory.crust"
+      label="PizzaFactory"
       version="8.5.0.qualifier"
       provider-name="PizzaFactory Project"
-      plugin="jp.pizzafactory.express.branding"
+      plugin="jp.pizzafactory.crust.branding"
       license-feature="org.eclipse.license"
       license-feature-version="1.0.1.v20140414-1359">
 
    <description url="http://www.pizzafactory.jp/">
-      [Enter Feature Description here.]
+IDE base components for PizzaFactory.
    </description>
 
    <copyright url="http://www.example.com/copyright">
       Product: Copyright (C) 2005-2010 Monami Software Limited Partnership,
 JAPAN.\n\
 Product: Copyright (C) 2012-     Monami-ya LLC, Japan.\n\
+Product: Copyright (C) 2014-     PizzaFactory Project.\n\
 It contains so many open source software in this product.
 See also copyright notices in those software.
    </copyright>
 
-   <license url="http://www.example.com/license">
-      See license information in your install package.
+   <license>
+      See license information in your installation.
    </license>
 
    <url>
-      <update label="PizzaFactory8 Update Site" url="http://update.pizzafactory.jp/express/8.5/"/>
-      <discovery label="PizzaFactory8.5 Update Site" url="http://update.pizzafactory.jp/express/8.5/"/>
+      <update label="Crust for PizzaFactory Update Site" url="http://update.pizzafactory.jp/crust/8.5"/>
+      <discovery label="Crust for PizzaFactory Update Site" url="http://update.pizzafactory.jp/crust/8.5"/>
    </url>
 
    <includes
@@ -158,16 +159,9 @@ See also copyright notices in those software.
          version="0.0.0"/>
 
    <plugin
-         id="jp.pizzafactory.express.branding"
+         id="jp.pizzafactory.crust.branding"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
-   <plugin
-         id="jp.pizzafactory.product"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   
 </feature>
