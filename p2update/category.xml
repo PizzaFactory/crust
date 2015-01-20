@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/jp.pizzafactory.crust_8.5.0.qualifier.jar" id="jp.pizzafactory.crust" version="8.5.0.qualifier">
+   <feature url="features/jp.pizzafactory.crust_8.5.0.M20150120-0231.jar" id="jp.pizzafactory.crust" version="8.5.0.M20150120-0231">
       <category name="PizzaFactory Crust"/>
    </feature>
    <category-def name="PizzaFactory Crust" label="PizzaFactory Crust">
