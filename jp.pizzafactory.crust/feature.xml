@@ -2,7 +2,7 @@
 <feature
       id="jp.pizzafactory.crust"
       label="PizzaFactory"
-      version="8.5.0.M20150120-0231"
+      version="8.5.0.qualifier"
       provider-name="PizzaFactory Project"
       plugin="jp.pizzafactory.crust.branding"
       license-feature="org.eclipse.license"
