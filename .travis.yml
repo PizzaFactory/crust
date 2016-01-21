@@ -4,6 +4,6 @@ env:
   - MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=128m"
   - secure: JQZJB7KwydPqR3yAwwXPsXr9D8OmTuMYTZZbvjUC8sscRRyMexoWYtFgvssbfDjVSLrGK3vyC2Ufa+5EuXpw8xR1C/EINnW+/L15wywPgAg8J2Nh76kE8KLUKCpQyYw1zUz9VxJRjnR7CgVTE3UrLXhrf3bQuBmBwOyiiNy7Z0c=
   - secure: PWUKoyPcARaAeJc0TuhWy74FlB+4g4mIV2WTb1hdZFKTtxFsYXN9lyFKrr7Q2osZIcBnp+aDV446kyoBQwx+tMzPLrDC0I8/R9Oo3rl5ochOvblSN2MYmHkleCqNu399OkMQhLSDSmBWiEFZDtVuQLgWsdGIJ+ucPDUhNYUxAPI=
-script: mvn -f parent/pom.xml install
+script: mvn --batch-mode -f parent/pom.xml install
 branches:
   except: travis
