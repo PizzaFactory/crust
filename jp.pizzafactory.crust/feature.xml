@@ -15,8 +15,8 @@ IDE base components for PizzaFactory.
    <copyright url="http://www.example.com/copyright">
       Product: Copyright (C) 2005-2010 Monami Software Limited Partnership,
 JAPAN.\n\
-Product: Copyright (C) 2012-     Monami-ya LLC, Japan.\n\
-Product: Copyright (C) 2014-     PizzaFactory Project.\n\
+Product: Copyright (C) 2012 Monami-ya LLC, Japan.\n\
+Product: Copyright (C) 2014-2016 PizzaFactory Project.\n\
 It contains so many open source software in this product.
 See also copyright notices in those software.
    </copyright>
@@ -32,131 +32,40 @@ See also copyright notices in those software.
 
    <includes
          id="org.eclipse.cdt"
-         version="0.0.0"/>
+         version="8.5.0" match="equivalent" />
 
-   <includes
-         id="org.eclipse.cdt.build.crossgcc"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.core.lrparser.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.debug.gdbjtag"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.debug.standalone"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.debug.ui.memory"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.gdb"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.gnu.build"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.gnu.debug"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.gnu.dsf"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.mylyn"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.native"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cdt.platform"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.e4.rcp"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.e4.rcp.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.core.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.extras.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.rcp.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.user.ui"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.help"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.mylyn.cvs"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.mylyn.git"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.mylyn_feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.platform.source"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.rcp"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal.sdk"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal.serial"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal.ssh"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal.telnet"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.tm.terminal.view"
-         version="0.0.0"/>
+   <requires>
+       <import feature="org.eclipse.platform" />
+       <import feature="org.eclipse.cdt.build.crossgcc" />
+       <import feature="org.eclipse.cdt.core.lrparser.feature" />
+       <import feature="org.eclipse.cdt.debug.gdbjtag" />
+       <import feature="org.eclipse.cdt.debug.standalone" />
+       <import feature="org.eclipse.cdt.debug.ui.memory" />
+       <import feature="org.eclipse.cdt.gdb" />
+       <import feature="org.eclipse.cdt.gnu.build" />
+       <import feature="org.eclipse.cdt.gnu.debug" />
+       <import feature="org.eclipse.cdt.gnu.dsf" />
+       <import feature="org.eclipse.cdt.mylyn" />
+       <import feature="org.eclipse.cdt.native" />
+       <import feature="org.eclipse.cdt.platform" />
+       <import feature="org.eclipse.e4.rcp" />
+       <import feature="org.eclipse.e4.rcp.source" />
+       <import feature="org.eclipse.equinox.p2.core.feature" />
+       <import feature="org.eclipse.equinox.p2.extras.feature" />
+       <import feature="org.eclipse.equinox.p2.rcp.feature" />
+       <import feature="org.eclipse.equinox.p2.user.ui" />
+       <import feature="org.eclipse.help" />
+       <import feature="org.eclipse.mylyn.cvs" />
+       <import feature="org.eclipse.mylyn.git" />
+       <import feature="org.eclipse.mylyn_feature" />
+       <import feature="org.eclipse.rcp" />
+       <import feature="org.eclipse.tm.terminal" />
+       <import feature="org.eclipse.tm.terminal.sdk" />
+       <import feature="org.eclipse.tm.terminal.serial" />
+       <import feature="org.eclipse.tm.terminal.ssh" />
+       <import feature="org.eclipse.tm.terminal.telnet" />
+       <import feature="org.eclipse.tm.terminal.view" />
+   </requires>
 
    <plugin
          id="jp.pizzafactory.crust.branding"
