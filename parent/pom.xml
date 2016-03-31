@@ -215,8 +215,8 @@
 	<url>http://www.pizzafactory.jp/</url>
   </organization>
   <ciManagement>
-	<system>Jenkins</system>
-	<url>http://builder.monami-ya.com:8080/jenkins/view/PizzaFactory/job/PizzaFactory%20Crust/</url>
+    <system>Travis-CI</system>
+    <url>https://travis-ci.org/PizzaFactory/crust</url>
   </ciManagement>
 
   <distributionManagement>
