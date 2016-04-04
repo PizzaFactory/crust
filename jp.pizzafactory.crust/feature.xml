@@ -32,7 +32,7 @@ See also copyright notices in those software.
 
    <includes
          id="org.eclipse.cdt"
-         version="8.5.0" match="equivalent" />
+         version="8.5.0.201409172108" match="equivalent" />
 
    <requires>
        <import feature="org.eclipse.platform" />
