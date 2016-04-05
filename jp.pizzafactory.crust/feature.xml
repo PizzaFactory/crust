@@ -65,6 +65,7 @@ See also copyright notices in those software.
        <import feature="org.eclipse.tm.terminal.ssh" />
        <import feature="org.eclipse.tm.terminal.telnet" />
        <import feature="org.eclipse.tm.terminal.view" />
+       <import feature="gnu.io.rxtx" version="2.1.7.3_v20070718-7B57e7TAXMAAqAqGr" match="perfect" />
    </requires>
 
    <plugin
