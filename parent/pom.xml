@@ -10,7 +10,7 @@
 
   <groupId>jp.pizzafactory.crust</groupId>
   <artifactId>parent</artifactId>
-  <version>8.5.0.M20150120-0231</version>
+  <version>8.5.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>PizzaFactory Crust</name>
@@ -31,8 +31,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tycho-version>0.21.0</tycho-version>
-    <tycho-extras.version>0.21.0</tycho-extras.version>
+    <tycho-version>0.24.0</tycho-version>
+    <tycho-extras.version>0.24.0</tycho-extras.version>
     <tycho-groupid>org.eclipse.tycho</tycho-groupid>
     <pizzafactory-version>8.5</pizzafactory-version>
   </properties>
@@ -112,7 +112,9 @@
           </environments>
           <target>
             <artifact>
+              <groupId>jp.pizzafactory.crust</groupId>
               <artifactId>product-target</artifactId>
+              <version>8.5.0-SNAPSHOT</version>
             </artifact>
           </target>
         </configuration>
