@@ -26,8 +26,8 @@ See also copyright notices in those software.
    </license>
 
    <url>
-      <update label="Crust for PizzaFactory Update Site" url="http://update.pizzafactory.jp/crust/8.5"/>
-      <discovery label="Crust for PizzaFactory Update Site" url="http://update.pizzafactory.jp/crust/8.5"/>
+      <update label="Crust for PizzaFactory Update Site" url="http://pizzafactory.github.io/crust/8.5"/>
+      <discovery label="Crust for PizzaFactory Update Site" url="http://pizzafactory.github.io/crust/8.5"/>
    </url>
 
    <includes
