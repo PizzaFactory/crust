@@ -73,6 +73,11 @@
       <layout>p2</layout>
       <url>http://download.eclipse.org/tools/cdt/releases/8.5/</url>
     </repository>
+    <repository>
+      <id>rxtx</id>
+      <layout>p2</layout>
+      <url>http://pizzafactory.github.io/bits/rxtx/</url>
+    </repository>
   </repositories>
 
   <build>
