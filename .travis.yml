@@ -9,4 +9,4 @@ env:
 script:
 - if [[ "x$TRAVIS_BRANCH" == "xmaster" && "x$TRAVIS_PULL_REQUEST" == "xfalse" ]]; then GOAL=deploy; else GOAL=install; fi
 - echo "Goal is " $GOAL
-- travis_wait 30 mvn --batch-mode -f parent/pom.xml clean $GOAL
+- travis_wait 30 mvn --batch-mode -f parent/pom.xml -s settings.xml clean $GOAL
